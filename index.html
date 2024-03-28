@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Jones</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            /* Impedisce al footer di sovrapporsi al contenuto se è troppo corto */
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
         .miur-bar {
             background-color: #E1EFFF;
@@ -74,15 +73,14 @@
             text-decoration: none;
         }
 
+
         footer {
-            background-color: #a8e3ed;
-            color: #fff;
-            padding: 10px 0;
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
+    background-color: #a8e3ed;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    /* Rimuovi position: fixed e bottom: 0 */
+}
 
         footer .container {
             width: 80%;
@@ -167,6 +165,15 @@
         #aggiorna:hover {
             color: #005797;
         }
+
+        /* Aggiungi questo per spingere il footer in basso */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
     </style>
 </head>
 
