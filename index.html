@@ -124,6 +124,13 @@
             height: auto;
         }
 
+        .responsive-img {
+            width: 100%; /* Imposta la larghezza al 100% del contenitore */
+            height: auto; /* Mantiene il rapporto aspetto originale */
+            border-radius: 50%; /* Opzionale: arrotonda i bordi per un effetto circolare */
+        }
+
+
         td h1 {
             font-size: 18px;
             margin-top: 0;
@@ -190,7 +197,11 @@
     
     <table>
         <tr>
-          <th>Intestazione 1</th>
+          <th>
+            
+            <th><img src="me.jpg" class="responsive-img" alt="Immagine di me"></th>
+
+          </th>
           <td>Dato 1</td>
         </tr>
       </table>
